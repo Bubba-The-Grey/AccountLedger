@@ -16,7 +16,7 @@ public class HomeScreen {
         System.out.println("X)Exit");
 
         System.out.print("Enter a choice:");
-        String userChoice = myScanner.nextLine().trim();
+        String userChoice = myScanner.nextLine().trim().toUpperCase();
 
 
         if (userChoice.equals("D")) {

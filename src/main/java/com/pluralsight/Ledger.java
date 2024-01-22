@@ -15,7 +15,7 @@ public class Ledger {
         System.out.print("Enter a choice:");
         myScanner.nextLine();
 
-        String userChoice = myScanner.nextLine().trim();
+        String userChoice = myScanner.nextLine().trim().toUpperCase();
         if (userChoice.equals("A")) {
             FileReader fileReader = new FileReader("src/main/resources/transactions.csv.xlsx");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
